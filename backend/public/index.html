@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            async function contactServer(){
+                const response = await fetch('/api');
+                const data = await response.json();
+                console.log(data.message);
+            }
+            
+            function onSubmit(){
+                console.log('submitting');
+                const files = document.getElementById('fileInput').files;
+                console.log(files);
+                const filesArray = Array.prototype.slice.call(files);
+                const imageFile = filesArray[0];
+                console.log(imageFile);
+                const name = imageFile.name;
+                const reader = new FileReader(imageFile);
+                reader.onload = () => {
+                    let image64 = reader.result;
+                    submitImageToServer(name, image64);
+                };
+                reader.readAsDataURL(imageFile);
+            }
+            async function submitImageToServer(name, img64){
+                const sendData = {
+                    imageName: name,
+                    image64: img64
+                };
+                const options = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(sendData)
+                };
+                const response = await fetch('/api/imageStore', options);
+                const res_data = await response.json();
+                console.log(res_data);
+            }
+            async function onImageSearch(){
+                const searchName = document.getElementById('imageSearch').value;
+                console.log('Searching: ' + searchName);
+                const sendData = { searchName };
+                const options = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(sendData)
+                };
+                const response = await fetch('/api/imageRetrieve', options);
+                const res_data = await response.json();
+                document.getElementById('selectedImage').src = res_data.image64;
+            }           
+
+        </script>
+        <h1>backend to adampoperwebsite
+        </h1>
+        <input id="fileInput" type="file"></input>
+        <button onclick="onSubmit()">Submit</button>
+        <br/>
+        <input type="text" id="imageSearch"/>
+        <button onclick="onImageSearch()">Search Image</button>
+        <br/>
+        <img src="" alt="No Selected Image" id="selectedImage" width="400px"/>
+    </body>
+</html>

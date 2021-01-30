@@ -1,0 +1,13 @@
+.aboutme {
+    background: rgb(230, 230, 230);
+}
+.content{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.aboutme img{
+    border-radius: 50%;
+    width: 20%;
+    margin: 25px;
+}

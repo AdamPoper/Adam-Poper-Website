@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.projects-page{
+    background: rgb(212, 212, 212);
+}
+.projects{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.projects-intro{
+    height: 1000px;
+}
+.projects-header{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 56px;
+    color:rgb(230, 230, 230);
+    padding: 30px;
+    letter-spacing: 12px;
+    font-weight: 200;
+}
+.intro-message{
+    font-family: 'Oxygen', sans-serif;
+    color:rgb(226, 226, 226);
+    margin-top: 9%;
+    margin-right: 5%;
+    font-size: 28px;
+    letter-spacing: 3px;
+    float: right;
+}
+.project{
+    margin: 10px;
+    border-bottom: solid 1px black;
+    font-family: 'Oxygen', sans-serif;
+    padding: 10px;
+}
+.project h1:hover{
+    cursor: pointer;
+}
+.project-header{
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    font-size: 56px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    padding: 10px;
+}
+.project h1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.project p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.project h5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.project a{
+    text-decoration: none;
+    color: black;
+}
+.project-view{
+    font-family: 'Oxygen', sans-serif;
+}
+.project-view .desc-style{
+    font-size: 28px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.project-content{
+    text-align: center;
+    margin: 10px;
+}
+.project-content p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.project-content p a{
+    text-decoration: none;
+}
+.project-content h2 {
+    font-size: 48px;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.media {
+    margin: 20px;
+}
+.media h2 {
+    padding-bottom: 40px;
+}
+.media-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 700px);
+    justify-content: center;
+    grid-column-gap: 30px;
+}
+.project-view .project-content h3 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-weight: 100;
+}
+.project-media-card video{
+    padding: 10px;
+    max-width: 700px;
+}
+.project-media-card img{
+    max-height: 500px;
+    max-width: 500px;
+    width: auto;
+    height: auto;
+}
+
+.projects-page button{
+    width: 80px;
+    height: 40px;
+    margin-left: 5%;
+    margin-top: 10px;
+    background: rgb(180, 180, 180);
+    border-radius: 20px;
+    border-color: rgb(226, 226, 226);
+}
+
+@media screen and (max-width: 768px){
+    .project-view .desc-style {
+        font-size: 20px;
+        padding: 1px;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .project-media-card video{
+        width: 400px;
+    }
+    .projects-page h1{
+        font-size: 38px;
+    }
+    .project-content h2{
+        font-size: 32px;
+    }
+    .projects-page .project-content h3 {
+        font-size: 24px;
+    }
+}
