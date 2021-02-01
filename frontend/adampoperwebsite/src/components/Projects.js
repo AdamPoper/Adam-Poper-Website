@@ -53,7 +53,7 @@ class Projects extends React.Component{
                 </div>
                 <button style={{display: this.state.viewingProj ? '': 'none'}} 
                         onClick={() => {this.setState({viewingProj: false})}}>Back</button>
-                <h1 className='project-header'>{this.state.projectTitle}</h1>
+                <h1 className='project-header'>{this.state.viewingProj ? this.state.projectTitle : 'Projects'}</h1>
                 <div className='projects'>
                     <div style={{
                         display: this.state.viewingProj ? 'none' : '',

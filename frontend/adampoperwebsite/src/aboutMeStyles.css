@@ -1,13 +1,51 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
 .aboutme {
     background: rgb(230, 230, 230);
+    font-family: 'Oxygen', sans-serif;
 }
-.content{
+.content {
     align-items: center;
     align-content: center;
     text-align: center;
+}
+.header {
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 56px;
+    color:rgb(230, 230, 230);
+    padding: 30px;
+    letter-spacing: 10px;
+    font-weight: 200;
 }
 .aboutme img{
     border-radius: 50%;
     width: 20%;
     margin: 25px;
+    
+}
+.aboutme .intro-message {
+    float: left;
+    margin-left: 5%;
+    margin-top: 11%;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+.introduction {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+.introduction h1 {
+    font-weight: 100;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.introduction p {
+    padding-bottom: 20px;
 }
