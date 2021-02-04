@@ -51,16 +51,18 @@ class Projects extends React.Component{
                         <p>and technologies I know and how I use them.</p>
                     </div>
                 </div>
-                <button style={{display: this.state.viewingProj ? '': 'none'}} 
-                        onClick={() => {this.setState({viewingProj: false})}}>Back</button>
-                <h1 className='project-header'>{this.state.viewingProj ? this.state.projectTitle : 'Projects'}</h1>
-                <div className='projects'>
-                    <div style={{
-                        display: this.state.viewingProj ? 'none' : '',
-                    }}>{projects}</div>
-                    <div>
-                        {this.state.viewingProj ? <ProjectView projectInfo={this.state.currentProject}/> : <div/>}
-                    </div>
+                <div className='project-viewing'>
+                    <button style={{display: this.state.viewingProj ? '': 'none'}} 
+                            onClick={() => {this.setState({viewingProj: false})}}>Back</button>
+                    <h1 className='project-header'>{this.state.viewingProj ? this.state.projectTitle : 'Projects'}</h1>
+                    <div className='projects'>
+                        <div style={{
+                            display: this.state.viewingProj ? 'none' : '',
+                        }}>{projects}</div>
+                        <div>
+                            {this.state.viewingProj ? <ProjectView projectInfo={this.state.currentProject}/> : <div/>}
+                        </div>
+                    </div>                    
                 </div>
             </div>
         );

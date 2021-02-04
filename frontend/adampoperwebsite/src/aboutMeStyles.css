@@ -33,7 +33,7 @@
     font-size: 28px;
     letter-spacing: 3px;
 }
-.introduction {
+.paragraphs {
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
@@ -41,11 +41,11 @@
     font-size: 36px;
     letter-spacing: 3px;
 }
-.introduction h1 {
+.paragraphs h1 {
     font-weight: 100;
     padding-bottom: 20px;
     padding-top: 20px;
 }
-.introduction p {
+.prargraphs p {
     padding-bottom: 20px;
 }
