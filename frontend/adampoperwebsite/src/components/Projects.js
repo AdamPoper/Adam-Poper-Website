@@ -3,7 +3,9 @@ import Nav from './Nav.js';
 import Project from './Project.js';
 import '../projectStyle.css';
 import background from '../images/coding.jpg';
+import textbook from '../images/textbook.jpg';
 import ProjectView from './ProjectView.js';
+
 
 class Projects extends React.Component{
     constructor(){
@@ -41,7 +43,7 @@ class Projects extends React.Component{
         return(
             <div className='projects-page'>
                 <div style={{
-                    backgroundImage: `url(${background})`
+                    backgroundImage: `url(${textbook})`
                 }} className='projects-intro'>
                     <Nav />
                     <h1 className='projects-header'>Project Showcase</h1>

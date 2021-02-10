@@ -1,5 +1,6 @@
 import React from 'react';
 import sunset from '../images/sunset1.jpg';
+import textbook from '../images/textbook.jpg';
 import Adam from '../images/Adam_Jobs.jpg';
 import Nav from './Nav.js';
 import '../aboutMeStyles.css';
