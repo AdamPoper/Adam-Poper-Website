@@ -38,10 +38,10 @@ class AboutMe extends React.Component {
                             a bachelor of science degree in computer science with the career goal of becoming a software engineer.
                             I have been practicing my computer programming skills for four years now and started when I was 
                             introduced to it in a high school class. Since then I have been in the constant pursuit to learn more about
-                            this field and create bigger and greater projects. From a young age, I have always loved builing things and have always
+                            this field and create bigger and greater projects. From a young age, I have always loved building things and have always
                             been fascinated by how things work the way that they do. Because of this, I have a unique curiosity for learning about all
                             sorts of topics ranging from astronomy to history to computers. I have a tendency to learn very quickly about
-                            everying and anything that peaks my interest. Software Engineering is the perfect career path for me 
+                            everything and anything that peaks my interest. Software Engineering is the perfect career path for me 
                             because it gives me the tools and freedom to create and learn about whatever I want, whenever I want to.                    
                         </p>
                         <h1>This Portfolio</h1>
@@ -73,14 +73,14 @@ class AboutMe extends React.Component {
                             basics of C++. During this year we learned the fundamentals of programming including basic arithmetic, variables,
                             strings, arrays, loops, if-statements, functions, etc. During this year I was fascinated by using programming
                             to build things that are fun or useful to solve a real-world problems. I've always loved making things. Especially 
-                            as a kid I loved building with legos and in high school I really enjoyed wood shop class in high school.
+                            as a kid I loved building with legos and in high school I really enjoyed wood shop class.
                             Getting exposed to computer programming my senior year was the best thing that could have happened to me because
                             it layed the ground work for how I would plan my future career. 
                             <br />
                             After high school, I continued learning more about programming through expanding my knowledge about C++. I taught my self 
                             more advanced topics like object oriented programming and how to manage my own memory. But when I took the Computer Science II
                             class at Kutztown University, I learned how to implement these advanced topics more professionally by making my own
-                            data structures like linked lists, stacks, queues, and dynamic arrays. After this I felt really confident in my 
+                            data structures like linked lists, stacks, queues, and dynamic arrays. After this, I felt really confident in my 
                             programming abilities and started exploring libraries like SFML and OpenGL to make more complicated interactive
                             applications with graphics. I made basic games like flappy bird and checkers with SFML and a solar system simulation 
                             with OpenGL. During this time I became captivated in the world of computer graphics. In summer 2020, 
