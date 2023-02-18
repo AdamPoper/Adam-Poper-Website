@@ -16,7 +16,7 @@ class Home extends React.Component {
                 <div style={{
                     backgroundImage: `url(${background})`,
                     height: '1000px',
-                    scale: '50%',
+                    scale: '100%',
                     backgroundRepeat: 'no-repeat',
                     background: 'cover'
                 }}>
